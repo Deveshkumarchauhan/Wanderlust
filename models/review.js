@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const reviwSchema = new Schema({
-  Comment: String,
+  comment: String,
   rating: {
     type: Number,
     min: 1,

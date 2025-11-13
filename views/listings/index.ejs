@@ -5,11 +5,11 @@
       <button>Create New Listing</button>
     </form> -->
 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
- <% for (let listing of allListings) { %>
-  <% console.log(listing); %> <!-- This logs to the Node.js console -->
+  <% for (let listing of allListings) { %> <% console.log(listing); %>
+  <!-- This logs to the Node.js console -->
 
   <a href="/listings/<%= listing._id %>" class="listing-links">
-    <div class="card col">
+    <div class="card col listing-card">
       <img
         src="<%= listing.image.url %>"
         class="card-img-top"
@@ -25,6 +25,5 @@
       </div>
     </div>
   </a>
-<% } %>
-
+  <% } %>
 </div>
